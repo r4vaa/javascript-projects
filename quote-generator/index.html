@@ -10,15 +10,40 @@
       type="image/png"
       href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="quote-box">
-      <p>the Quote that we want to show</p>
-      <button>twitter button</button>
-      <button>new Quote</button>
+    <div class="quote-container" id="quote-container">
+      <!-- Quote -->
+      <div class="quote-text">
+        <i class="fas fa-quote-left"></i>
+        <span id="quote">
+          What you are is what you have been. What you'll be is what you do now
+        </span>
+      </div>
+
+      <!-- Author -->
+      <div class="quote-author">
+        <span id="author">Buddha</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet this">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button id="new-quote">New Quote</button>
+      </div>
     </div>
 
+    <!-- Script -->
     <script src="script.js"></script>
   </body>
 </html>
